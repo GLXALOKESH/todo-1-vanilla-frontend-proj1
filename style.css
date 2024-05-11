@@ -92,6 +92,7 @@ body > h1{
     align-items: center;
     padding: 0px 10px;
     margin: 10px;
+    /* overflow-x: hidden; */
 }
 .checkbox{
     width: 10px;
@@ -100,12 +101,14 @@ body > h1{
     border: 1px solid black;
     margin-right: 10px;
     cursor: pointer;
+    margin-left: 5px;
 
 
 }
 .task-text{
     color: white;
     font-family: 'poppins', sans-serif;
+    overflow-x: hidden;
 }
 .text-input{
     /*height: 50vh;
