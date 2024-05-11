@@ -1,3 +1,4 @@
+var count=0;
 function addtask(text){
     let base = document.createElement("div");
     let box = document.getElementById("tr-box");
@@ -6,11 +7,24 @@ function addtask(text){
     let check = document.createElement("div");
     check.classList = "checkbox";
     base.append(check); 
+    let cross = document.createElement("img")
+    cross.src ="cross.svg"
+    check.append(cross)
+
     let tex = document.createElement("p");
     tex.classList = "text";
     tex.innerText = text;
     tex.classList = "task-text"; 
     base.append(tex);
+    count++;
+    console.log(count);
+    check.addEventListener("click", function() {
+        let tcBox = document.getElementById("tc-box");
+        tcBox.prepend(base); 
+        cross.style.display = "block"
+        tex.style.textDecoration = "line-through"
+    });
+    
 }
 console.log("Script running");
 
@@ -38,5 +52,6 @@ closee.onclick = (e)=>{
         alert("Task description cannot be empty!");
     }
  }
+
 
 
