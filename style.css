@@ -178,3 +178,25 @@ body > h1{
     position: absolute;
     display: none;
 }
+@media screen and (max-width:700px) {
+    .text-input{
+        width: 40vw;
+    }
+    .container{
+        width: 65vw;
+    }
+}
+@media screen and (max-width:500px) {
+    .container{
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .text-input{
+        width: 55vw;
+    }
+    .container{
+        width: 90vw;
+    }
+}
