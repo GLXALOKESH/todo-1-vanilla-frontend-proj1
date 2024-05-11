@@ -16,6 +16,27 @@ console.log("Script running");
 
 let btn = document.getElementById("addTaskBtn")
 btn.addEventListener("click", (e)=>{
-    // alert("hello")
-    addtask("hello");
+    document.getElementById("wall1").style.display = "block"
+    document.getElementById("text-inp-main").style.display = "flex"
 })
+
+let closee = document.getElementById("close-box")
+closee.onclick = (e)=>{
+    document.getElementById("wall1").style.display = "none"
+    document.getElementById("text-inp-main").style.display = "none"
+
+}
+ let add= document.getElementById("task-add")
+ add.onclick = (e) =>{
+    let text = document.getElementsByClassName("text")[0].value
+    
+    if (text.trim() !== "") { 
+        addtask(text);
+        document.getElementById("wall1").style.display = "none";
+        document.getElementById("text-inp-main").style.display = "none"; 
+    } else {
+        alert("Task description cannot be empty!");
+    }
+ }
+
+

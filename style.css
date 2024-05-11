@@ -127,10 +127,11 @@ body > h1{
     -o-border-radius: 10px;
     padding: 20px;
     border: 2px solid black;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 .text-input input{
     width: 90%;
