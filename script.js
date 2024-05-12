@@ -52,6 +52,14 @@ closee.onclick = (e)=>{
         alert("Task description cannot be empty!");
     }
  }
+ btn.addEventListener("click", (e)=>{
+    document.getElementById("plus").classList = "rt"
+    setTimeout(() => {
+        document.getElementById("plus").classList = ""        
+    }, 2000);
 
+
+
+})
 
 

@@ -35,6 +35,9 @@ body > h1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid #ADBBDA;
+    box-shadow: 0px 0px 10px 0px black ;
+
 }
 .continn{
     width: 80%;
@@ -52,6 +55,8 @@ body > h1{
     -o-border-radius: 10px;
     overflow-y: scroll;
     overflow-x: hidden;
+    border: 1px solid goldenrod;
+    box-shadow: 0px 0px 10px 0px black ;
 }
 .button{
     width: 60px;
@@ -72,7 +77,10 @@ body > h1{
     /* margin-right: 100px; */
     color: white;
     cursor: pointer;
+    border: 1px solid silver;
+
 }
+
 .button > img{
     height: 15px;
     cursor: pointer;
@@ -93,7 +101,8 @@ body > h1{
     padding: 0px 10px;
     margin: 10px;
     /* overflow-x: hidden; */
-    position: relative
+    position: relative;
+    border: 2px solid silver;
 }
 .checkbox{
     width: 10px;
@@ -178,6 +187,10 @@ body > h1{
     position: absolute;
     display: none;
 }
+.rt{
+    animation: rotate 2s ease-in-out 0.1s 1 forwards ;
+    -webkit-animation: rotate 2s ease-in-out 0.1s 1 forwards ;
+}
 @media screen and (max-width:700px) {
     .text-input{
         width: 40vw;
@@ -198,5 +211,23 @@ body > h1{
     }
     .container{
         width: 90vw;
+    }
+}
+
+@keyframes rotate {
+    25%{
+        rotate: 90deg;
+    }
+    50%{
+        rotate: 90deg;
+        
+    }
+    75%{
+        rotate: 90deg;
+
+    }
+    100%{
+        rotate: 90deg;
+
     }
 }
